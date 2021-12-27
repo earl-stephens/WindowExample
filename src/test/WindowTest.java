@@ -11,4 +11,29 @@ public class WindowTest {
 		Window window1 = new Window();
 		Assert.assertNotNull(window1);
 	}
+	
+	@Test
+	public void shouldHaveDefaultColorAttributes() {
+		Window window1 = new Window();
+		String result = window1.getWindowColor();
+		String expected = "Green";
+		Assert.assertEquals(expected, result);
+	}
+	
+	@Test
+	public void shouldBeAbleToChangeColors() {
+		Window window1 = new Window();
+		window1.setWindowColor(2);
+		String result = window1.getWindowColor();
+		Assert.assertEquals("Blue", result);
+	}
+	
+	@Test
+	public void shouldReturnColorOptions() {
+		Window window1 = new Window();
+		String[] expected = {"Green", "Black", "Blue", "White"};
+		String[] result = window1.getColorOptions();
+		Assert.assertArrayEquals(expected, result);
+	}
+	
 }
