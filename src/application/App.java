@@ -11,5 +11,7 @@ public class App {
 		 * attributes: size, color, position
 		 * methods: change color, minimize/maximize, reposition
 		 */
+		
+		
 	}
 }

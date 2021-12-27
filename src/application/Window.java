@@ -12,4 +12,8 @@ public class Window {
 		windowColor = colorOptions[colorOption];
 		return windowColor;
 	}
+	
+	public String[] getColorOptions() {
+		return colorOptions;
+	}
 }
