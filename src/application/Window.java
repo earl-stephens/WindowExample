@@ -1,5 +1,10 @@
 package application;
 
 public class Window {
+	private String[] colorOptions = {"Green", "Black", "Blue", "White"};
+	private String windowColor = colorOptions[0];
 	
+	public String getWindowColor() {
+		return windowColor;
+	}
 }
