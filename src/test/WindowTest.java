@@ -20,4 +20,12 @@ public class WindowTest {
 		Assert.assertEquals(expected, result);
 	}
 	
+	@Test
+	public void shouldBeAbleToChangeColors() {
+		Window window1 = new Window();
+		window1.setWindowColor(2);
+		String result = window1.getWindowColor();
+		Assert.assertEquals("Blue", result);
+	}
+	
 }

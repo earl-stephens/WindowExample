@@ -7,4 +7,9 @@ public class Window {
 	public String getWindowColor() {
 		return windowColor;
 	}
+	
+	public String setWindowColor(int colorOption) {
+		windowColor = colorOptions[colorOption];
+		return windowColor;
+	}
 }
