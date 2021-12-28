@@ -36,4 +36,28 @@ public class WindowTest {
 		Assert.assertArrayEquals(expected, result);
 	}
 	
+	@Test
+	public void shouldReturnSizeOptions() {
+		Window window1 = new Window();
+		String[] expected = {"Default", "Maximize", "Minimize"};
+		String result[] = window1.getSizeOptions();
+		Assert.assertArrayEquals(expected, result);
+	}
+	
+	@Test
+	public void shouldHaveDefaultSize() {
+		Window window1 = new Window();
+		String result = window1.getWindowSize();
+		String expected = "Default";
+		Assert.assertEquals(expected, result);
+	}
+	
+	@Test
+	public void shouldBeAbleToSelectSize() {
+		Window window1 = new Window();
+		window1.setWindowSize(1);
+		String expected = "Maximize";
+		String result = window1.getWindowSize();
+		Assert.assertEquals(expected, result);
+	}
 }
